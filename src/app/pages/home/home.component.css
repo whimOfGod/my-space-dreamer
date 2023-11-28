@@ -1,0 +1,9 @@
+.section-1,.section-3 {
+    height: 70vh;
+    background-color: black;
+}
+
+.section-2 {
+    height: 50vh;
+    background-color: transparent;
+}

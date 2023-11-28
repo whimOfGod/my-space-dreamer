@@ -1,0 +1,107 @@
+header {
+    height: 50vh;
+    width: 100%;
+    background-image: url("../../../assets/images/rey.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: rgba(0, 0, 0, 0.824); */
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+header:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.742); /* Couleur noire avec une transparence de 50% */
+  }
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding-inline: 2em;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+img {
+    height: 30%;
+    width: 30%;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__menu>ul {
+    display: flex;
+    height: 100%;
+   }
+
+.header__menu>ul>li {
+    list-style: none;
+    padding-inline: 1em;
+}
+
+.header__menu>ul>li>.menu-btn-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 100%;
+    padding-inline: 1em;
+}
+
+.header__menu>ul>li>.menu-btn-link:hover {
+    color: black;
+    background-color: white;
+    transition: color 0.7s ease-in-out;
+}
+
+.header__menu>ul>li>.menu-btn-link:active {
+    color: black;
+    background-color: #E24716;
+    transition: color 0.7s ease-in-out;
+}
+
+.header__menu>ul>li>.menu-btn-link:focus {
+    color: black;
+    background-color: white;
+    transition: color 0.7s ease-in-out;
+}
+
+.section-search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.search-area-zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    width: 500px;
+    padding-left: 1em;
+    border-radius: 9px;
+    border: 0px solid var(--dark_motion, #FFF);
+    background: rgba(217, 217, 217, 0.16);
+}
+
+.h-54 {
+    height: 54px;
+}
