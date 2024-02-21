@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './features/header/header.component';
 import { FooterComponent } from './features/footer/footer.component';
+import { ImageCardSectionComponent } from './features/image-card-section/image-card-section.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FooterComponent } from './features/footer/footer.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    ImageCardSectionComponent,
   ],
   imports: [
     BrowserModule,
