@@ -30,7 +30,7 @@ header:after {
 .header__logo {
     display: flex;
     align-items: center;
-    height: 100%;
+    height: auto;
 }
 
 img {
@@ -40,7 +40,7 @@ img {
 
 .header__menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 .header__menu>ul {
@@ -104,4 +104,36 @@ img {
 
 .h-54 {
     height: 54px;
+}
+
+@media (max-width: 1200px) { 
+    .nav-header {
+    justify-content: center;    }
+}
+
+@media (max-width: 885px) { 
+    .header__logo {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) { 
+    nav{
+        padding-inline: none;     }
+    .nav-header {
+        padding-inline: 0px;
+    }
+    .header__menu>ul {
+        flex-wrap: wrap;
+        padding-inline: 0px;
+    }
+    .header__logo {
+        display: none;
+    }
+    .section-search-button {
+        height: 50vh;
+    }
+    .search-area-zone {
+        width: 300px;
+    }
 }
