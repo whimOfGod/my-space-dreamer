@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './features/header/header.component';
 import { FooterComponent } from './features/footer/footer.component';
 import { ImageCardSectionComponent } from './features/image-card-section/image-card-section.component';
+import { SocialDisplayCardComponent } from './features/social-display-card/social-display-card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ImageCardSectionComponent } from './features/image-card-section/image-c
     HeaderComponent,
     FooterComponent,
     ImageCardSectionComponent,
+    SocialDisplayCardComponent,
   ],
   imports: [
     BrowserModule,

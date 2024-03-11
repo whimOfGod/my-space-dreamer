@@ -1,0 +1,6 @@
+.card-img-profile {
+    width: 200px; /* Largeur maximale de l'image est égale à la largeur de la carte */
+    height: 200px; /* Hauteur fixe de l'image (à ajuster selon vos préférences) */
+    object-fit: cover; /* Redimensionne l'image pour remplir la zone en gardant ses proportions */
+    object-position: center; /* Centre l'image dans la zone de l'image */
+}

@@ -1,11 +1,14 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component'; // Importez HomeComponent
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      imports: [RouterTestingModule],
+      declarations: [AppComponent, HomeComponent] // Ajoutez HomeComponent aux déclarations
+    }).compileComponents();
   }));
 
   it('should create the app', () => {
@@ -20,10 +23,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('my-space-dreamer');
   });
 
-  it('should render title', () => {
+  it('should render app-home', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('my-space-dreamer app is running!');
+    expect(compiled.querySelector('app-home')).toBeTruthy(); // Vérifiez la présence de app-home
   });
 });
